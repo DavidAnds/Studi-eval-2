@@ -1,0 +1,244 @@
+/* ----------------
+     Général
+------------------- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-size */
+.font-size-1 {
+  font-size: .9rem;
+}
+.font-size-2 {
+  font-size: .9375rem;
+}
+.font-size-3 {
+  font-size: 1.125rem;
+}
+.font-size-4 {
+  font-size: 1.5625rem;
+}
+.font-size-5 {
+  font-size: 1.8rem;
+}
+.font-size-6 {
+  font-size: 2.1875rem;
+}
+
+/* font-weight */
+.font-weight-700 {
+  font-weight: 700;
+}
+.font-weight-900 {
+  font-weight: 900;
+}
+
+/* color */
+.text-blue {
+  color: #05053e;
+}
+.text-grey {
+  color: #4a4a4a;
+}
+.bg-dark-blue {
+  background-color: #404045;
+}
+
+
+/* font-family */
+.font-fam-kaunshan {
+  font-family: "Kaushan Script", cursive;
+}
+.font-fam-noto {
+  font-family: "Noto Sans JP", sans-serif;
+}
+/* other */
+.top-70 {
+  top: 70%;
+}
+
+/* ----------------
+     ALL PAGES
+------------------- */
+
+/* Header */
+header {
+  background: url("./img/header.jpg");
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Navigation */
+.logo {
+  width: 40px;
+}
+
+/* Intro section */
+.img-intro {
+  max-height: 200px;
+}
+
+/* Footer */
+.link {
+  text-decoration: none;
+  color: #05053e;
+}
+
+/* ----------------
+     HOME PAGE
+------------------- */
+
+/* News section */
+.carousel-label {
+  background-color: rgba(0, 0, 0, 0.597);
+  top: 70%;
+  width: 100%;
+}
+#carouselNews {
+  max-width: 800px;
+}
+
+
+/* ----------------
+  CONTACT SECTION
+------------------- */
+.form-card,
+.info-card {
+  background: #00000058;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 20px;
+}
+.btn-blue {
+  border: 2px solid #05053e;
+  color: #05053e;
+  transition: all 0.5s;
+}
+.btn-blue:hover {
+  background-color: #05053e;
+  color: #f1f1f1;
+}
+.form-label {
+  color: #05053e;
+}
+
+/* ----------------
+     EVENT PAGES
+------------------- *
+
+/* Last Event */
+.last-event-img-container {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 63px;
+  overflow: hidden;
+}
+.last-event-info {
+  width: 100%;
+  max-width: 400px;
+  background-color: #05053e;
+  height: 40px;
+  margin: 0 auto;
+}
+.last-event-description {
+  margin-left: 10px;
+  display: none;
+}
+.last-event-card {
+  width: 90%;
+  height: 300px;
+  border-radius: 50px;
+  margin-inline: auto;
+  padding: 10px 0;
+  background-color: #05053e;
+  box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.last-event-card-body {
+  padding: 0px 40px;
+}
+.last-event-card img {
+  width: 100%;
+}
+
+
+/* -----------------------
+     MEDIA QUERIES
+--------------------------- */
+
+@media screen and (max-width: 375px) {
+    .font-size-1 {
+        font-size: .8rem;
+    }
+    .font-size-5 {
+      font-size: 1.6rem;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+  .font-size-2 {
+    font-size: 1rem;
+  }
+  .font-size-3 {
+    font-size: 1.5625rem;
+  }
+  .font-size-4 {
+    font-size: 1.875rem;
+  }
+  .font-size-5{
+    font-size: 1.9rem;
+  }
+  .font-size-6 {
+    font-size: 2.5rem;
+  }
+  
+  /* Carousel */
+  .carousel-label {
+    top: 80%;
+  }
+
+  /* Last event */
+  .last-event-description {
+    display: block;
+  }
+  .last-event-p {
+    text-align: start;
+    max-width: 500px;
+  }
+  .last-event-info {
+    margin: 0;
+  }
+ 
+}
+
+@media screen and (min-width: 1024px) {
+  .font-size-2 {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .last-event-card {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 0;
+    height: 150px;
+    border-radius: 100px;
+    width: 98%;
+  }
+  .last-event-card-img {
+    width: 50%;
+  }
+  .last-event-card-body {
+    width: 50%;
+    padding: 15px 10px;
+  }
+}

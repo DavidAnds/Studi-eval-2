@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- General -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page d'accueil et de présentation des Racoons, une association de basketball du 12e arrondissement de Paris. On vas retrouver dans cette page l'historique et les dernières actualités du club">
+    <title>Les Raccons, association de basketball du 12e à Paris</title>
+
+     <!-- FavIcon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+     <link rel="manifest" href="favicon/site.webmanifest">
+     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+     <meta name="msapplication-TileColor" content="#da532c">
+     <meta name="theme-color" content="#ffffff">
+
+     <!-- Font-family -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+
+     <!-- Style -->
+     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-size-2 font-fam-noto">
+
+    <!-- Header -->
+    <header class="position-relative">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <img src="./img/logo_racoon.png" alt="logo des Racoons qui representent un raton-laveur" class="logo navbar-brand">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./home.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./event.html">Evenement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+
+        <!-- The text in the middle of the header -->
+        <div class="container position-absolute top-70 start-50 translate-middle">
+            <div class="text-center text-light">
+                <h1 class="text-light font-weight-700 font-size-6 ">
+                    Les <span class="font-fam-kaunshan mx-1 mx-md-2">Racoons</span> du 12e
+                </h1>
+                <h2 class="font-size-3">
+                    Association de basket du 12e arrondissement de Paris
+                </h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro section -->
+    <section class="py-5">
+        <div class="container">
+
+            <!-- Intro title -->
+            <div class="row">
+                <div class="col">
+                    <h2 class=" font-weight-900 font-size-4 text-blue">
+                        Qui sommes nous?
+                    </h2>
+                    <p class="text-blue">
+                        Apprenez à nous connaitre!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Intro body -->
+            <div class="row my-4 align-items-center">
+                <div class="col-md-6">
+                    <img src="./img/equipe_feminine.jpg" alt="équipe féminine U18 se regroupant en cercle de façon solidaire" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="font-size-4 font-fam-kaunshan text-grey my-3">Une équipe pour tous les âges</h3>
+                    <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quas beatae ipsa nulla voluptatum, suscipit accusamus impedit quod libero vitae.</p>
+                    <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio illo corrupti ad rerum dolore asperiores numquam tempora ipsam inventore minus commodi quis libero, itaque sapiente? Sint ut et dolore earum?</p>
+                </div>
+            </div>
+            <div class="row my-4 align-items-center">
+                <div class="col-md-6">
+                    <h3 class="font-size-4 font-fam-kaunshan text-grey mb-3">Une équipe victorieuse</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quas beatae ipsa nulla voluptatum, suscipit accusamus impedit quod libero vitae.</p>
+                    <p> Optio illo corrupti ad rerum dolore asperiores numquam tempora ipsam inventore minus commodi quis libero, itaque sapiente? Sint ut et dolore earum?</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./img/panier_marque.jpg" alt="panier de basket avec un ballon rentré dedans" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News sections -->
+    <section class="py-5 bg-dark-blue">
+        <div class="container">
+
+            <!-- News title -->
+            <div class="row">
+                <div class="col">
+                    <h2 class="font-weight-900 font-size-4 text-light">
+                        Les News des Racoons
+                    </h2>
+                    <p class="text-light">
+                        Découvrez notre actualité
+                    </p>
+                </div>
+            </div>
+
+            <!-- News body -->
+            <div class="row my-4">
+                <div class="col ">
+                    <!-- Carousel -->
+                    <div id="carouselNews" class="carousel slide mx-auto" data-bs-ride="carousel">
+                        <div class="carousel-indicators top-0">
+                          <button type="button" data-bs-target="#carouselNews" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselNews" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselNews" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item position-relative">
+                                <div class="carousel-label  position-absolute text-light">
+                                    <div class="container">
+                                        <h3 class="font-size-2">Champions 2020/21</h4>
+                                        <p class="font-size-1">Les U18 des Racoons ont remporté le championnat d'ile de France</p>
+                                    </div>
+                                </div>
+                                <img src="./img/equipe_championne.jpg" class="d-block w-100" alt="equipe U18 masculine des racoons posant ensemble avec le trophée">
+                              </div>
+
+                            <div class="carousel-item active position-relative">
+                                <div class="carousel-label  position-absolute text-light">
+                                    <div class="container">
+                                        <h3 class="font-size-2">Camp d'arbitre</h4>
+                                        <p class="font-size-1">Le camp d'arbitre s'est déroulé le 16/08/21 à fontainebleau</p>
+                                    </div>
+                                 </div>
+                                 <img src="./img/arbitre_basket.jpg" class="d-block w-100 my-0" alt="un arbitre de basketball tenant une balle" >
+                           </div>
+                       
+                            <div class="carousel-item position-relative">
+                                <div class="carousel-label  position-absolute text-light">
+                                    <div class="container">
+                                        <h3 class="font-size-2">MVP U15</h4>
+                                        <p class="font-size-1">Jacques James a été élu meilleur joueur du championnat U15 d'ile de france</p>
+                                    </div>
+                                </div>
+                                <img src="./img/jeune_basketteur.jpg" class="d-block w-100" alt="Un jeune qui joue au basketball dans un terrain en extérieur">
+                           </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNews" data-bs-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselNews" data-bs-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -->
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center pt-4 pb-1">
+        <div class="container">
+            <div class="row ">
+                <div class="col my-2 ">
+                    <img src="./img/logo_racoon.png" alt="logo des Racoons qui representent un raton-laveur" class="logo">
+                </div>
+            </div>
+
+            <div class="row align-items-center ">
+                <div class="col my-2">
+                    <ul class="list-group list-group-horizontal justify-content-center ">
+                        <li class="list-group-item"><a href="#" class="text-decoration-none text-blue">Accueil</a></li>
+                        <li class="list-group-item"><a href="#" class="text-decoration-none text-blue">Evenement</a></li>
+                        <li class="list-group-item"><a href="./Contact.html" class="text-decoration-none text-blue">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col my-2">
+                    <p class="copyright">
+                        2021 | Tout droit réserver à David Andriason
+                   </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

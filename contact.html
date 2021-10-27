@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- General -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page qui permet de remplir en formulaire pour entrer en contact avec les Racoons">
+    <title>Formulaire de contact avec Les Racoons</title>
+
+    <!-- FavIcon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+   
+    <!-- Font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+   
+    <!-- Bootstrap and Css -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-size-2 font-fam-noto">
+
+    <!-- Header -->
+    <header class="position-relative">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <img src="./img/logo_racoon.png" alt="logo des Racoons qui representent un raton-laveur" class="logo navbar-brand">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./home.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./event.html">Evenement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+
+        <!-- The text in the middle of the header -->
+        <div class="container position-absolute top-70 start-50 translate-middle">
+            <div class="text-center text-light">
+                <h1 class="text-light font-weight-700 font-size-6 ">
+                    Les <span class="font-fam-kaunshan mx-1 mx-md-2">Racoons</span> du 12e
+                </h1>
+                <h3 class="font-size-3">
+                    Association de basket du 12e arrondissement de Paris
+                </h3>
+            </div>
+        </div>
+       
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+
+            <!-- Contact title -->
+            <div class="row">
+                <div class="col">
+                    <h2 class="secondary-title text-blue">
+                        Nous contacter
+                    </h2>
+                    <p class="text-blue">
+                        Si vous avez des questions, n'hésitez pas !
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact body -->
+            <div class="row">
+                <div class="col form-card ">
+                    <h3 class="tertiary-title card-title text-grey">
+                        Formulaire
+                    </h3>
+                    <!-- Contact form -->
+                    <form>
+                        <div class="mb-3">
+                           <label for="name" class="form-label">Votre nom</label>
+                           <input type="text" class="form-control" id="name" placeholder="Nom prénom">
+                         </div>
+
+                        <div class="mb-3">
+                           <label for="mail" class="form-label">Votre adresse email</label>
+                           <input type="email" class="form-control" id="mail" placeholder="name@example.com">
+                         </div>
+
+                        <div class="mb-3">
+                           <label for="subject" class="form-label">Objet </label>
+                           <input type="text" class="form-control" id="subject" placeholder="Le sujet de votre message">
+                         </div>
+
+                         <div class="mb-3">
+                           <label for="message" class="form-label">Votre message</label>
+                           <textarea class="form-control" id="message" rows="3"></textarea>
+                         </div>
+                         
+                         <button class="btn btn-blue">
+                             Envoyez
+                         </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="pt-4 pb-1 bg-dark text-light text-center ">
+        <div class="container">
+            <div class="row ">
+                <div class="col my-2 ">
+                    <img src="./img/logo_racoon.png" alt="logo des Racoons qui representent un raton-laveur" class="logo">
+                </div>
+            </div>
+            
+            <div class="row align-items-center ">
+                <div class="col my-2">
+                    <ul class="list-group list-group-horizontal justify-content-center ">
+                        <li class="list-group-item"><a href="./home.html" class="link">Accueil</a></li>
+                        <li class="list-group-item"><a href="./event.html" class="link">Evenement</a></li>
+                        <li class="list-group-item"><a href="./contact.html" class="link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col my-2 ">
+                    <p class="copyright">
+                        2021 | Tout droit réserver à David Andriason
+                   </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
